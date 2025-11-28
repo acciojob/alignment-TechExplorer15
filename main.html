@@ -12,5 +12,76 @@
 </script>
 
 </body>
+  <!-- Page heading -->
+    <h1>HTML Assignment #3</h1>
+
+    <!-- ================= Table 1 ================= -->
+    <!-- 3x3; middle row has class "center", rightmost column has class "right" -->
+    <!-- Table id: table-1; cell ids: t11, t12, t13 -->
+    <table id="table-1" class="middle">
+        <tr>
+            <td id="t11">t11</td>
+            <td id="t12">t12</td>
+            <td id="t13" class="right">t13</td>
+        </tr>
+        <tr>
+            <!-- Middle row cells have class "center"; rightmost also has "right" -->
+            <td class="center">Row 2, Col 1</td>
+            <td class="center">Row 2, Col 2</td>
+            <td class="center right">Row 2, Col 3</td>
+        </tr>
+        <tr>
+            <td>Row 3, Col 1</td>
+            <td>Row 3, Col 2</td>
+            <td class="right">Row 3, Col 3</td>
+        </tr>
+    </table>
+
+    <!-- ================= Table 2 ================= -->
+    <!-- 6x6; first row is a single cell with colspan=6 -->
+    <!-- Table id: table-2; first cell id: t21 -->
+    <table id="table-2" class="middle">
+        <tr>
+            <td id="t21" colspan="6" class="center">
+                First row spanning all 6 columns
+            </td>
+        </tr>
+        <!-- Remaining 5 rows, each with 6 cells -->
+        <tr>
+            <td>R2C1</td><td>R2C2</td><td>R2C3</td><td>R2C4</td><td>R2C5</td><td>R2C6</td>
+        </tr>
+        <tr>
+            <td>R3C1</td><td>R3C2</td><td>R3C3</td><td>R3C4</td><td>R3C5</td><td>R3C6</td>
+        </tr>
+        <tr>
+            <td>R4C1</td><td>R4C2</td><td>R4C3</td><td>R4C4</td><td>R4C5</td><td>R4C6</td>
+        </tr>
+        <tr>
+            <td>R5C1</td><td>R5C2</td><td>R5C3</td><td>R5C4</td><td>R5C5</td><td>R5C6</td>
+        </tr>
+        <tr>
+            <td>R6C1</td><td>R6C2</td><td>R6C3</td><td>R6C4</td><td>R6C5</td><td>R6C6</td>
+        </tr>
+    </table>
+
+    <!-- ================= Table 3 ================= -->
+    <!-- Includes an image; first row green, last row blue -->
+    <!-- Table id: table-3; image cell id: t-image -->
+    <table id="table-3" class="middle">
+        <tr class="green">
+            <td colspan="3">First Row (Green)</td>
+        </tr>
+        <tr>
+            <td>Some text</td>
+            <td id="t-image">
+                <!-- Replace the src with any required image URL -->
+                <img src="https://via.placeholder.com/100" alt="Sample image">
+            </td>
+            <td>More text</td>
+        </tr>
+        <tr class="blue">
+            <td colspan="3">Last Row (Blue)</td>
+        </tr>
+    </table>
 
 </html>
