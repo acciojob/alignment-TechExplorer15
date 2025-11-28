@@ -12,20 +12,22 @@
 </script>
 
 </body>
-  <!-- Page heading -->
+ <!-- Page heading -->
     <h1>HTML Assignment #3</h1>
 
-    <!-- ================= Table 1 ================= -->
-    <!-- 3x3; middle row has class "center", rightmost column has class "right" -->
+    <!-- ================ Table 1 ================ -->
+    <!-- 3x3; middle row and rightmost column use center/right classes -->
     <!-- Table id: table-1; cell ids: t11, t12, t13 -->
     <table id="table-1" class="middle">
         <tr>
             <td id="t11">t11</td>
-            <td id="t12">t12</td>
+            <!-- t12 MUST have class "center" for the test -->
+            <td id="t12" class="center">t12</td>
+            <!-- t13 MUST have class "right" for the test -->
             <td id="t13" class="right">t13</td>
         </tr>
         <tr>
-            <!-- Middle row cells have class "center"; rightmost also has "right" -->
+            <!-- Middle row cells: center; last one also right -->
             <td class="center">Row 2, Col 1</td>
             <td class="center">Row 2, Col 2</td>
             <td class="center right">Row 2, Col 3</td>
@@ -37,7 +39,7 @@
         </tr>
     </table>
 
-    <!-- ================= Table 2 ================= -->
+    <!-- ================ Table 2 ================ -->
     <!-- 6x6; first row is a single cell with colspan=6 -->
     <!-- Table id: table-2; first cell id: t21 -->
     <table id="table-2" class="middle">
@@ -64,7 +66,7 @@
         </tr>
     </table>
 
-    <!-- ================= Table 3 ================= -->
+    <!-- ================ Table 3 ================ -->
     <!-- Includes an image; first row green, last row blue -->
     <!-- Table id: table-3; image cell id: t-image -->
     <table id="table-3" class="middle">
@@ -74,7 +76,7 @@
         <tr>
             <td>Some text</td>
             <td id="t-image">
-                <!-- Replace the src with any required image URL -->
+                <!-- You can replace this with any required image URL -->
                 <img src="https://via.placeholder.com/100" alt="Sample image">
             </td>
             <td>More text</td>
